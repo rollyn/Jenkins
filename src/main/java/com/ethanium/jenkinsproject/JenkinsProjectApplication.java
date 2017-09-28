@@ -17,4 +17,9 @@ public class JenkinsProjectApplication {
 	public String get() {
 		return "Jenkins Testing";
 	}
+
+	@RequestMapping("/hello")
+	public String hello() {
+		return "Hello Jenkins";
+	}
 }
