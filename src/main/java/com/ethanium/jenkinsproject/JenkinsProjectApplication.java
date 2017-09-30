@@ -22,4 +22,9 @@ public class JenkinsProjectApplication {
 	public String hello() {
 		return "Hello Jenkins";
 	}
+
+@RequestMapping("/greet")
+	public String greet() {
+		return "Greet Jenkins";
+	}
 }
