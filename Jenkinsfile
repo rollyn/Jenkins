@@ -2,8 +2,10 @@ pipeline {
    agent any
 
    stages {
-        stage('package') {
-           cmd 'mvn package'
+        stage('build') {
+           step {
+             cmd 'mvn package'
+           }
         }
    }
 
